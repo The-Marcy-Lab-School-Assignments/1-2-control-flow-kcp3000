@@ -56,10 +56,44 @@ const happyBirthdayPet = (breed, age) => {
 
 //   funTypes,
 
+const funTypes = (type) => {
+    switch (true) {
+        case typeof type === 'string':
+            console.log(`That's just some text."`);
+            break;
 
+    }
+}
 
 //   rounder,
+
+const rounder = (float, round) => {
+    if (round === 'up') {
+        return Math.ceil(float);
+    } else if (round === 'down') {
+        return Math.floor(float);
+    } else if (round === 'honest') {
+        return Math.round(float)
+    };
+}
+
+console.log(rounder(1.5, 'honest'))
 //   fizzBuzzish,
+
+const fizzBuzzish = (num) => {
+    if (num % 5 === 0 && num % 3 === 0) {
+        console.log('fizzBuzz!')
+    } else if (num % 5 === 0) {
+        console.log('buzz')
+    } else if (num % 3 === 0) {
+        console.log(`fizz`)
+    } else {
+        console.log(num);
+    } ''
+};
+
+//fizzBuzzish(5)
+
 // } = require('./from-scratch');
 // const {
 //   getRandomIntInRange,

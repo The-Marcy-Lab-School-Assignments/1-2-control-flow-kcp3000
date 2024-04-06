@@ -45,13 +45,51 @@ const happyBirthdayPet = (breed, age) => {
   };
 }
 
-const funTypes = () => {
-};
+const funTypes = (type) => {
+  switch (true) {
+    case typeof type === 'string':
+      console.log(`That's just some text."`);
+      break;
+    case typeof type === 'number':
+      console.log(`That's a good number.`)
+      break;
+    case typeof type === 'boolean':
+      console.log('To bool, or not to bool?')
+      break;
+    case typeof type === 'undefined':
+      console.log("Nothing, but I didn't set that.")
+      break;
+    case typeof null === 'object':
+      console.log("Nothing, but I didn't set that.")
+      break;
+    case typeof type === 'object' && !Array.isArray(type) && type !== null:
+      console.log('Anybody got the key?')
+      break;
 
-const rounder = () => {
+  }
 };
+//console.log(funTypes({}))
 
-const fizzBuzzish = () => {
+const rounder = (float, round) => {
+  if (round === 'up') {
+    return Math.ceil(float);
+  } else if (round === 'down') {
+    return Math.floor(float);
+  } else if (round === 'honest') {
+    return Math.round(float)
+  };
+}
+
+const fizzBuzzish = (num) => {
+  if (num % 5 === 0 && num % 3 === 0) {
+    console.log('fizzBuzz!')
+  } else if (num % 5 === 0) {
+    console.log('buzz')
+  } else if (num % 3 === 0) {
+    console.log(`fizz`)
+  } else {
+    console.log(num);
+  } ''
 };
 
 module.exports = {

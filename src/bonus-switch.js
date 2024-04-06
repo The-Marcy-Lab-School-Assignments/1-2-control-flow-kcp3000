@@ -20,7 +20,25 @@ const measureRainSwitch = (inc) => {
   };
 };
 
-const rounderSwitch = () => {
+const rounderSwitch = (float, round) => {
+  // if (round === 'up') {
+  //   return Math.ceil(float);
+  // } else if (round === 'down') {
+  //   return Math.floor(float);
+  // } else if (round === 'honest') {
+  //   return Math.round(float)
+  // };
+  switch (true) {
+    case round === 'up':
+      return Math.ceil(float);
+      break;
+    case round === 'down':
+      return Math.floor(float);
+      break;
+    case round === 'honest':
+      return Math.round(float)
+      break;
+  };
 };
 
 module.exports = {
