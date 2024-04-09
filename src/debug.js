@@ -49,7 +49,12 @@ const getWeatherReport = (temperature) => {
 
 console.log(getWeatherReport(100))
 
-
+/** FEEDBACK: It is really cool that you got this nested ternary to work however you should only be using one. Your code could look like this: 
+const returnPositiveNegativeZero = (num) => {
+  if (num === 0) return 'Zero';
+  return (num < 1) ? 'Negative' : 'Positive';
+};
+ */
 const returnPositiveNegativeZero = (num) => {
   return num < 0 ? "Negative"
     : num === 0 ? "Zero"

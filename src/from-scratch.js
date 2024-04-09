@@ -44,7 +44,7 @@ const happyBirthdayPet = (breed, age) => {
       console.log('Happy birthday!');
   };
 }
-
+/** FEEDBACK: You were so close!!!! AHHHHHHH! You have an extra " at the end of text that is stopping you from seeing the rest of the tests! YOu are missing tests for null and NaN! */
 const funTypes = (type) => {
   switch (true) {
     case typeof type === 'string':

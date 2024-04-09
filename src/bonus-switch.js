@@ -1,3 +1,4 @@
+/** FEEDBACK: Great job with this bonus! */
 const measureRainSwitch = (inc) => {
   switch (true) {
     case inc === 0:
